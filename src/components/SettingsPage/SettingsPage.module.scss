@@ -1,4 +1,7 @@
+@import '../../sass/veriables.scss';
+
 .main {
   height: 100%;
   width: 100%;
+  background-color: var(--color-main-page);
 }

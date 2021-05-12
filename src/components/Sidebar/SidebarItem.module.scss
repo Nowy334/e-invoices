@@ -1,0 +1,31 @@
+@import '../../sass/veriables.scss';
+.list__item{
+
+  padding: 1rem;
+  font-family: inherit;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &:hover > &-link {
+    color: var(--color-primary);
+  }
+
+  &:hover > &-svg {
+    fill: var(--color-primary);
+  }
+
+  &-link{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.7rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &-svg{
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1.2rem;
+    transition: all 0.3s ease-in-out;
+  }
+}
