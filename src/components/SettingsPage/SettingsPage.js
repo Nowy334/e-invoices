@@ -1,9 +1,10 @@
 import classes from './SettingsPage.module.scss';
+import Navbar from './Navbar';
 
 const SettingsPage = () => {
   return(
     <main className={classes.main}>
-      <h2>WItma</h2>
+      <Navbar/>
     </main>
   );
 }
