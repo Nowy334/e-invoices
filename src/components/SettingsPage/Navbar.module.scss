@@ -9,6 +9,10 @@
   padding: 0 3rem;
   border-bottom: 1px solid rgba(0,0,0,0.08);
   margin-bottom: 3rem;
+  z-index: 100;
+
+
+  background-color: var(--color-main-page);
 
   &__title{
     color: #1d4885;
