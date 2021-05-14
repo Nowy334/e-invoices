@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import PersonalInformation from './SettingsPageElements/PersonalInformation';
 import ContractData from './SettingsPageElements/ContractData';
 import EmailNotifications from './SettingsPageElements/EmailNotifications';
+import MarketingCommunication from './SettingsPageElements/MarketingCommunication';
 
 const SettingsPage = () => {
   return(
@@ -12,6 +13,7 @@ const SettingsPage = () => {
         <PersonalInformation className={classes['main__container-1']}/>
         <ContractData className={classes['main__container-2']}/>
         <EmailNotifications className={classes['main__container-3']}/>
+        <MarketingCommunication className={classes['main__container-4']}/>
       </div>
     </main>
   );

@@ -27,7 +27,7 @@ const bookmarks = [
 ];
 
 const elements = bookmarks.map((element, index) => {
-  return <SidebarItem name={element.name} svg={element.svg} key={index}/>
+  return <SidebarItem name={element.name} svg={element.svg} key={index} id={index}/>
 })
 
 const Sidebar = () => {
