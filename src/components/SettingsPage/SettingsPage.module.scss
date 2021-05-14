@@ -6,6 +6,9 @@
   background-color: var(--color-main-page);
   //overflow: scroll;
   overflow-y: scroll;
+  &::-webkit-scrollbar{
+    display: none;
+  }
 
   &__container{
     display: grid;

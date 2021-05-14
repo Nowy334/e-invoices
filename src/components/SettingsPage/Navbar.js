@@ -15,8 +15,8 @@ const Navbar = () => {
           </svg>
         </div>
         <svg className={classes['navbar__content-bg--svg']}>
-            <use href={sprite + '#icon-keyboard_arrow_down'}></use>
-          </svg>
+          <use href={sprite + '#icon-keyboard_arrow_down'}></use>
+        </svg>
       </div>
     </nav>
   );
