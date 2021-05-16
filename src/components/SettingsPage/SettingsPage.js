@@ -5,8 +5,10 @@ import ContractData from './SettingsPageElements/ContractData';
 import EmailNotifications from './SettingsPageElements/EmailNotifications';
 import MarketingCommunication from './SettingsPageElements/MarketingCommunication';
 import Documents from './SettingsPageElements/Documents';
+import Facture from './EfactureResignation/Facture';
 
-const SettingsPage = () => {
+const SettingsPage = (props) => {
+
   return(
     <main className={classes.main}>
       <Navbar/>
@@ -16,6 +18,7 @@ const SettingsPage = () => {
         <EmailNotifications className={classes['main__container-3']}/>
         <MarketingCommunication className={classes['main__container-4']}/>
         <Documents className={classes['main__container-5']}/>
+        <Facture className={classes['main__container-6']} isToggled ={props.isToggled} onToggle={props.onToggle}/>
       </div>
     </main>
   );
