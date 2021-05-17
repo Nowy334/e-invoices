@@ -2,3 +2,32 @@
   --color-main-page: #fbfbfb;
   --color-primary: #1fc2b0;
 }
+
+$bp-largest: 75em;  //1200px / 16 = 75 em
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+
+@mixin respond($breakpoint){
+  @if $breakpoint == phone {
+      @media only screen and (max-width: 37.5em) { @content }; //600px
+  }
+  @if $breakpoint == tab{
+    @media only screen and (max-width: 47.5em) { @content }; //760px
+  } 
+  @if $breakpoint == tab-port {
+      @media only screen and (max-width: 56.25em) { @content }; //900px
+  }
+  @if $breakpoint == tab-port-max {
+    @media only screen and (max-width: 62.5em) { @content }; //1000px
+  }
+  @if $breakpoint == netbook {
+    @media only screen and (max-width: 80.625em) { @content }; //1290px
+  }
+  @if $breakpoint == laptop {
+    @media only screen and (max-width: 90.625em) { @content }; //1450px
+  }
+  @if $breakpoint == big-desktop {
+      @media only screen and (min-width: 112.5em) { @content };//1800px
+  }
+}

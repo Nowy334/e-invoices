@@ -10,7 +10,7 @@ const Documents = (props) => {
           <svg className={classes['container__header-svg']}>
             <use href={sprite + '#icon-files'}></use>
           </svg>
-          <h3 className={classes['container__header-title']}>Powiadomienia E-mail</h3>
+          <h3 className={classes['container__header-title']}>Dokumenty</h3>
         </div>
         <ul className={classes.container__list}>
           <li className={classes['container__list-link']}><a href="/#">Regulamin</a></li>

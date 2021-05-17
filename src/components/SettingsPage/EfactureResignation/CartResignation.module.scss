@@ -12,6 +12,11 @@
     justify-content: center;
     align-items: center;
 
+    @include respond(tab-port-max){
+      width: 60%;
+      height: 30%;
+    }
+
     &-text{
       font-size: 2rem;
       margin-bottom: 2.5rem;

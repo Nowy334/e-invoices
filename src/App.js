@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.module.scss';
 import Sidebar from './components/Sidebar/Sidebar';
 import SettingsPage from './components/SettingsPage/SettingsPage';
@@ -8,7 +8,19 @@ import CartResignation from './components/SettingsPage/EfactureResignation/CartR
 function App() {
   const[isToggled, setIsToggled] = useState(false);
   const[modalIsShow, setModalIsShown] = useState(false);
+  const [pageWidth, setPageWidth] = useState(window.innerWidth);
 
+  const isMobile = pageWidth <= 730;
+
+  const updateWidthPage = () => {
+    setPageWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', updateWidthPage);
+    return () => window.removeEventListener("resize", updateWidthPage);
+  })
+  
   const showModalHandler = () => {
     setModalIsShown(true);
   };
@@ -36,6 +48,16 @@ function App() {
     setIsToggled(!isToggled);
     showModalHandler(true);
   };
+
+  if(isMobile){
+    return (
+      <>
+        <SettingsPage isToggled = {isToggled} onToggle = {onToggleHandler}/>
+        <InfoButton/>
+        {modalIsShow && <CartResignation onHideModalWhenNo ={hideModalWhenNoHandler} onHideModalWhenYes = {hideModalWhenYesHandler} isToggled={isToggled}/>}
+      </>
+    );
+  }
 
 
   return (
