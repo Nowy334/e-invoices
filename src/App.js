@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar/Sidebar';
 import SettingsPage from './components/SettingsPage/SettingsPage';
 import InfoButton from './components/UI/InfoButton';
 import CartResignation from './components/SettingsPage/EfactureResignation/CartResignation';
+import SettingsPageMobile from './components/Mobile/SettingsPageMobile';
 
 function App() {
   const[isToggled, setIsToggled] = useState(false);
@@ -52,8 +53,7 @@ function App() {
   if(isMobile){
     return (
       <>
-        <SettingsPage isToggled = {isToggled} onToggle = {onToggleHandler}/>
-        <InfoButton/>
+        <SettingsPageMobile/>
         {modalIsShow && <CartResignation onHideModalWhenNo ={hideModalWhenNoHandler} onHideModalWhenYes = {hideModalWhenYesHandler} isToggled={isToggled}/>}
       </>
     );
