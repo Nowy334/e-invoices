@@ -7,12 +7,14 @@ const ContractData = (props) => {
     <Cover className = {props.className}>
       <div className={classes.container}>
         <div className={classes.container__header}>
-          <svg className={classes['container__header-svg']}>
-            <use href={sprite + '#icon-files'}></use>
-          </svg>
-          <h3 className={classes['container__header-title']}>Dane umowy</h3>
+          <div>
+            <svg className={classes['container__header-svg']}>
+              <use href={sprite + '#icon-files'}></use>
+            </svg>
+            <h3 className={classes['container__header-title']}>Dane umowy</h3>
+          </div>
           <p className={classes['container__header-content']}>
-            <span className={classes['container__header-content-2']}>Punkt poboru:</span> PLPOLD10801300001211</p>
+          <span className={classes['container__header-content-2']}>Punkt poboru:</span> PLPOLD10801300001211</p>
         </div>
         <div className={classes.container__data}>
           <div>

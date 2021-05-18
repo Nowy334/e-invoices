@@ -1,17 +1,30 @@
 @import '../../../sass/veriables.scss';
 .container {
+
+  &__header {
+    display: flex;
+  }
+
   &-title{
     font-size: 2rem;
     font-weight: 700;
     display: inline-block;
     margin-left: 1.3rem;
     margin-bottom: 1.5rem;
+    @include respond(tab-mode){
+      font-size: 3rem;
+    }
   }
 
   &-svg{
     height: 2rem;
     width: 2rem;
     fill: var(--color-primary);
+    @include respond(tab-mode){
+      height: 3rem;
+      width: 3rem;
+      flex-shrink: 0;
+    }
   }
 
   &__info{

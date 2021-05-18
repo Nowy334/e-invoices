@@ -46,6 +46,7 @@ $text-color: #7c8a97;
       letter-spacing: 0.8px;
       @include respond(phone){
         font-size: 2rem;
+        margin-left: 0;
       }
 
       &-2{

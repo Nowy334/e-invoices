@@ -7,10 +7,12 @@ const MarketingCommunication = (props) => {
   return (
     <Cover className = {props.className}>
       <div className={classes.container}>
-        <svg className={classes['container-svg']}>
-          <use href={sprite + '#icon-clipboard'}></use>
-        </svg>
-        <h3 className={classes['container-title']}>Zgody na komunikację marketingową</h3>
+        <div className={classes.container__header}>
+          <svg className={classes['container-svg']}>
+            <use href={sprite + '#icon-clipboard'}></use>
+          </svg>
+          <h3 className={classes['container-title']}>Zgody na komunikację marketingową</h3>
+        </div>
         <div className={classes.container__info}>
           <ToggleSwitch id={6}/>
           <p>Oświadczam, że zgadzam się na kontakt drogą telefoniczną (Opcjonalnie)</p>
