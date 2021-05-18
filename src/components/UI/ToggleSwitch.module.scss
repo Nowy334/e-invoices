@@ -18,6 +18,10 @@
     display: block;
     border-radius: 10rem;
     position: relative;
+    @include respond(tab-mode){
+      width: 5.5rem;
+      height: 2.5rem;
+    }
   }
   
   label:after {
@@ -30,6 +34,10 @@
     background: grey;
     border-radius: 50%;
     transition: 0.3s;
+    @include respond(tab-mode){
+      width: 2rem;
+      height: 2rem;
+    }
   }
   
   input:checked + label {

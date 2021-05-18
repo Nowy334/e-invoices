@@ -4,7 +4,7 @@ import MenuElements from './MenuElements';
 const Menu = (props) => {
 
   const Elemnts = props.data.map((element, index) => {
-    return <MenuElements content = {element} key = {index}/>;
+    return <MenuElements content = {element} key = {index} click={props.click} id={index}/>;
   });
 
   return(

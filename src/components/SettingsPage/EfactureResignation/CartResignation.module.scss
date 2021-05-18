@@ -17,6 +17,11 @@
       height: 30%;
     }
 
+    @include respond(phone){
+      width: 80%;
+      height: 30%;
+    }
+
     &-text{
       font-size: 2rem;
       margin-bottom: 2.5rem;
@@ -38,6 +43,9 @@
         cursor: pointer;
         transition: opacity 0.5s;
         backface-visibility: hidden;
+        @include respond(phone){
+          padding: 1rem 3rem; 
+        }
 
         &:hover{
           opacity: 0.5;

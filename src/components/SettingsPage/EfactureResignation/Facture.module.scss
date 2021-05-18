@@ -6,12 +6,20 @@
     display: inline-block;
     margin-left: 1.3rem;
     margin-bottom: 1.5rem;
+    align-items: center;
+    @include respond(tab-mode){
+      font-size: 3rem;
+    }
   }
 
   &-svg{
     height: 2rem;
     width: 2rem;
     fill: var(--color-primary);
+    @include respond(tab-mode){
+      height: 3rem;
+      width: 3rem;
+    }
   }
 
   &__info{
@@ -24,6 +32,9 @@
       color: #1d4885;
       font-size: 1.4rem;
       font-weight: 700;
+      @include respond(tab-mode){
+        font-size: 2rem;
+      }
     }
 
     &-svg{
@@ -31,6 +42,10 @@
       width: 1.5rem;
       fill: var(--color-primary);
       margin-left: 1rem;
+      @include respond(tab-mode){
+        height: 2rem;
+        width: 2rem;
+      }
     }
 
   }

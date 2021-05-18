@@ -53,7 +53,7 @@ function App() {
   if(isMobile){
     return (
       <>
-        <SettingsPageMobile/>
+        <SettingsPageMobile isToggled = {isToggled} onToggle = {onToggleHandler}/>
         {modalIsShow && <CartResignation onHideModalWhenNo ={hideModalWhenNoHandler} onHideModalWhenYes = {hideModalWhenYesHandler} isToggled={isToggled}/>}
       </>
     );
