@@ -1,4 +1,5 @@
-# staz-krzysztof-nowak
+# e-invoices
+Simple settings view with programmed option to opt out of e-invoice written in react.
 
 ## Available Scripts
 
